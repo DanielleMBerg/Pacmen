@@ -1,9 +1,13 @@
-# pacmen
-Factory for making pacmen
-You are given a starter.html code.
-When button "make one" is pressed you need to complete the code 
-to position the new pacman image and add it to the "game" div. It is then added to the array of pacmen, which keeps track of the position and velocity of each pacman.
-You also need to make each pacman bounce off any wall it hits. 
-Start by getting at least one pacman positioned and viewable. 
+# Pacmen
+Create multiple Pacmen and have them move around the page bouncing off boundaries.
 
-<img src="PacMan1.png">
+The basics of the code was provided to me by my MIT course. I was responsible for completeing the code for the following functions that were used: makePac(), update(), and checkCollisions().
+
+# How to Run
+To run on your own device, download all the files (except for the LICENSE file and the README file) and save them in one folder. Open the index.html document in your browser to start the game.
+
+# Future Improvements
+A few improvements that would be fun: create some CSS styling and potentially an interactive background.
+
+# License
+See the attached LICENSE file.
