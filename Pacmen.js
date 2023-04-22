@@ -8,8 +8,8 @@ const pacMen = [];
 
 function positionSetToRandom(scale) {
 return {
-  x: Math.random() * scale + 100,
-  y: Math.random() * scale + 50,
+  x: Math.random() * scale + 200,
+  y: Math.random() * scale + 100,
 };
 }
 
@@ -56,7 +56,7 @@ if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
   item.velocity.x = -item.velocity.x;
   }
 if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight ||
-  item.position.y + item.velocity.y < 100) {
+  item.position.y + item.velocity.y < 300) {
   item.velocity.y = -item.velocity.y;
   }
 }
