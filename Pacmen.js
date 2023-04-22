@@ -6,17 +6,23 @@ const pacArray = [
 let direction = 0;
 const pacMen = [];
 
-function setToRandom(scale) {
+function positionSetToRandom(scale) {
 return {
-  x: Math.random() * scale,
-  y: Math.random() * scale,
+  x: Math.random() * scale + 50,
+  y: Math.random() * scale + 50,
 };
 }
 
+function velocitySetToRandom(scale) {
+  return {
+    x: Math.random() * scale,
+    y: Math.random() * scale,
+  };
+  }
 
 function makePac() {
-let velocity = setToRandom(10);
-let position = setToRandom(200);
+let velocity = velocitySetToRandom(20);
+let position = positionSetToRandom(200);
 let game = document.getElementById('game');
 let newimg = document.createElement('img');
 newimg.style.position = 'absolute';
@@ -50,7 +56,7 @@ if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
   item.velocity.x = -item.velocity.x;
   }
 if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight + 5 ||
-  item.position.y + item.velocity.y < 0) {
+  item.position.y + item.velocity.y < 50) {
   item.velocity.y = -item.velocity.y;
   }
 }
