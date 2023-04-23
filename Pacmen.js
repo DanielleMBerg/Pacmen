@@ -56,7 +56,7 @@ if (item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
   item.velocity.x = -item.velocity.x;
   }
 if (item.position.y + item.velocity.y + item.newimg.height > window.innerHeight ||
-  item.position.y + item.velocity.y < 300) {
+  item.position.y + item.velocity.y < 100) {
   item.velocity.y = -item.velocity.y;
   }
 }
